@@ -19,8 +19,8 @@ for t in range(T):
         C[inta] += 1
 
     # 가장 많은 숫자 찾기
-    bignum = 0
-    numb = 0
+    bignum = 0 # 가장 큰 숫자
+    numb = 0 # 가장 많은 숫자
     for c in range(len(C)):
         if numb <= C[c]:
             numb = C[c]
