@@ -1,4 +1,4 @@
-# 회문_13755_슬라이싱 없이
+# 회문_13755
 
 # input.txt 열기
 import sys
@@ -18,24 +18,33 @@ for t in range(T):
             if lst[n][m] == lst[n][M + m -1]:
                 a = n
                 b = m
-                # 회문을 빈리스트 c에 저장하고 길이가 M인 회문만 추출한다.
+                # 회문을 빈리스트 c에 저장하고 d와 비교하여 회문인지 확인 후 길이가 M인 회문만 추출한다.
                 c = []
                 for mm in range(M):
                     c.append(lst[a][b+mm])
-                    if c == c[::-1] and len(c) == M:
-                        print(f'#{t+1}', ''.join(c))
+                    d = []
+                    for x in range(len(c)-1, -1, -1):
+                        d.append(c[x])
+                    else:
+                        if c == d and len(c) == M:
+                            print(f'#{t+1}', ''.join(c))
  
     for n in range(N): # NxN 행렬에서 세로로 탐색을 할 때 길이가 M인 회문의 시작점을 찾아 시작점을 a,b에 저장한다
         for m in range(N - M + 1):
             if lst[m][n] == lst[M + m -1][n]:
                 a = m
                 b = n
-                # 회문을 빈리스트 c에 저장하고 길이가 M인 회문만 추출한다.
+                # 회문을 빈리스트 c에 저장하고 d와 비교하여 회문인지 확인 후 길이가 M인 회문만 추출한다.
                 c = []
                 for mm in range(M):
                     c.append(lst[a+mm][b])
-                    if c == c[::-1] and len(c) == M:
-                        print(f'#{t+1}', ''.join(c))
+                    d = []
+                    for x in range(len(c) - 1, -1, -1):
+                        d.append(c[x])
+                    else:
+                        if c == d and len(c) == M:
+                            print(f'#{t + 1}', ''.join(c))
+
 
 
 

@@ -10,7 +10,7 @@ for t in range(T):
     N, M = map(int, input().split()) # 입력될 문장의 숫자
     lst = [list(input()) for _ in range(N)]
     lst_reverse = [[lst[j][i] for j in range(N)] for i in range(N)]
-    print(lst_reverse)
+
     # 회문찾기
     for n in range(N): # NxN 행렬에서 가로로 탐색을 할 때 회문을 찾아 출력한다.
         for m in range(N - M + 1):

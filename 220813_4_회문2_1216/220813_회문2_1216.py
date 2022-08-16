@@ -1,8 +1,8 @@
-# 회문_1216
+# 회문2_1216
 
 # input.txt 열기
 import sys
-sys.stdin = open('input.txt')
+sys.stdin = open('회문2_input.txt')
 
 # input 받기
 T = 10 # 테스트 수
