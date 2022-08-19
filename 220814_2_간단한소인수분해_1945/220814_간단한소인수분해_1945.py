@@ -31,4 +31,4 @@ for t in range(T):
         elif N % 11 == 0:
             N = N/11
             e += 1
-    print(f'#{t+1}', a,b,c,d,e)
+    print(f'#{t+1}', a, b, c, d, e)

@@ -26,7 +26,7 @@ for t in range(T):
 
     print(f'#{t+1}')
     for i in range(N):
-        print(*arr90[i],' ',*arr180[i], ' ',*arr270[i], sep='')
+        print(*arr90[i],' ', *arr180[i], ' ', *arr270[i], sep='')
 
 
 

@@ -5,16 +5,16 @@ import sys
 sys.stdin = open('input.txt')
 
 # input 받기
-T = int(input()) # 테스트 케이스
+T = int(input())                                # 테스트 케이스
 for t in range(T):
     N, K = input().split()
-    N = int(N) # 퍼즐의 행렬의 크기
-    K = int(K) # 퍼즐 안에 들어가는 단어 중 찾아야 할 길이
+    N = int(N)                                  # 퍼즐의 행렬의 크기
+    K = int(K)                                  # 퍼즐 안에 들어가는 단어 중 찾아야 할 길이
     arr = [list(map(int, input().split())) for _ in range(N)] # 퍼즐 그리기 / 1 = 입력 칸 / 0 = 막힌 칸
 
     # K의 길이를 같는 칸 찾기
-    cnt = 0 # 길이가 K인 칸의 수
-    blank = 0
+    cnt = 0                                     # 길이가 K인 칸의 수
+    blank = 0                                   # 1이 들어있는 칸의 수
     # 가로로 찾기
     for i in range(N):
         for j in range(N):

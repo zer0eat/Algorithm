@@ -11,7 +11,7 @@ for t in range(T):
 
     laser_cnt = [] # laser 리스트에서 레이저가 표시된 부분은 'z'로 막대기가 표시된 부분은 양끝이 같은 숫자로 표시
     cnt = 0 # 막대기의 양 끝을 나타내기 위한 숫자
-    maxV = 1 # 막대기가 겹치는 최대 수
+
     # 레이저와 쇠막대기가 표시된 리스트를 반복할 때
     for l in range(len(laser)):
         # 레이저 부분은 'z'로 표시한다
@@ -20,8 +20,6 @@ for t in range(T):
         # 쇠막대의 시작부분은 cnt의 숫자를 입력한 후 다음 막대를 위해 1을 더해주고, 가장 큰 수일 땐 maxV에 저장한다.
         elif laser[l] == '(' and laser[l + 1] == '(':
             laser_cnt.append(cnt)
-            if cnt > maxV:
-                maxV = cnt
             cnt += 1
         # 레이저 부분은 'z'로 표시한다
         elif laser[l] == ')' and laser[l - 1] == '(':
