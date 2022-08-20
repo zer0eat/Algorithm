@@ -2,7 +2,7 @@
 
 # input.txt 열기
 import sys
-sys.stdin = open('회문2_input.txt')
+sys.stdin = open('input.txt')
 
 # input 받기
 T = 10 # 테스트 수
