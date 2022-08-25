@@ -3,7 +3,7 @@
 # input.txt 열기
 import sys
 sys.stdin = open('input.txt')
-
+from pprint import pprint
 # input 받기
 T = int(input())                                                # 테스트 케이스
 for t in range(T):                                              # 테스트 케이스 만큼 반복
@@ -40,7 +40,7 @@ for t in range(T):                                              # 테스트 케�
                 elif miro[a+dr[i]][b+dc[i]] == 0:               # 갈 수 있는 길일 때
                     miro[a + dr[i]][b + dc[i]] = miro[a][b] - 1     # 그 전 칸보다 -1한 값으로 저장
                     q.append((a+dr[i], b+dc[i]))                # 큐에 갈 수 있는 길을 append
-
+    pprint(miro)
     if miro[Ea][Eb] < 0:                                        # 도착지점의 값이 음수이면 도착한 것이므로
         print(f'#{t+1}', abs(miro[Ea][Eb]+2))                   # 도착지점과 출발사이의 0의 개수인 miro[Ea][Eb]+2를 출력
     else:                                                       # 음수가 아니라면 도착하지 못했으므로
