@@ -55,4 +55,4 @@ for p in range(N-1, high_h[-2] - 1, -1):                                # 가장
         uuu += (qqq[0] - All_LH[p][0]) * qqq[1]                         # (처음기둥의 x좌표 - 다음기둥의 x좌표) * 처음 기둥의 y 좌표로 넓이를 구해 uuu에 더한다
         qqq = All_LH[p]                                                 # qqq를 다음 높이의 기둥으로 교체한다
 
-print(uuu)                                                              # 전체 넓이를 출력한다
+print(uuu)                                                              # 전체 넓이를 출력한다::Wq
