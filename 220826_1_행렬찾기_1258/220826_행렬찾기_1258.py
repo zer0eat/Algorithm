@@ -81,8 +81,8 @@ for t in range(T):                                                      # 테스
 
         all_box.append(box)                                             # 저장된 박스 한개의 행과 열의 길이를 all_box에 append
 
-    # print(cnt)
-    # print(all_box)
+    print(cnt)
+    print(all_box)
 
     # 박스 넓이 추가하기
     size = []                                                           # 박스의 크기별로 정렬하기 위해 만든 빈 리스트
@@ -102,7 +102,7 @@ for t in range(T):                                                      # 테스
             elif size[s1][1] == size[s1 + 1][1]:                        # 만약 넓이가 같을 때는
                 if size[s1][0][0] > size[s1+1][0][0]:                   # 박스의 행의 크기를 비교해서
                     size[s1], size[s1 + 1] = size[s1 + 1], size[s1]     # 작은 값이 앞에 나오게 정렬한다
-    # print(size)
+    print(size)
 
     print(f'#{t+1}', cnt, end=' ')                                      # 테스트케이스와 박스의 개수를 출력하고
     for i in range(len(size)-1):                                        # 박스의 행과 열의 길이를 출력한다
