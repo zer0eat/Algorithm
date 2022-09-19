@@ -27,4 +27,3 @@ for t in range(T):                      # 테스트 케이스를 반복할 때
             break
 
     print(f'#{t+1}', ans)               # 이진수로 변환된 실수를 출력한다
-
