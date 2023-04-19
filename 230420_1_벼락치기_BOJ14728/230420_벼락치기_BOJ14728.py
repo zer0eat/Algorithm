@@ -7,7 +7,7 @@ input = sys.stdin.readline
 
 # input 받기
 N, T = map(int, input().split())                # N 단원개수 / T 공부할 총 시간
-visited = [[0]*(T+1) for _ in range(N)]         # 
+visited = [[0]*(T+1) for _ in range(N)]         # 시간별로 공부하여 얻을 수 있는 최대치를 저장할 리스트 생성
 
 K, S = map(int, input().split())                # K 단원 별 공부 시간 / S 단원 별 배점
 for k in range(K, T+1):                         # K 시간부터 T까지 반복해서
