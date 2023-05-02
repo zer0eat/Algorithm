@@ -18,7 +18,7 @@ def dijkstra(start):
     distance = [1e9] * N                                # 헛간까지 이동 시간을 저장할 리스트 생성
     distance[start] = 0                                 # start 헛간까지 이동 비용을 0으로 저장
     tmp = [[0, start]]                                  # tmp에 [시작비용, 시작점]을 넣고 리스트 생성
-    while tmp:                                          # tmp가 빌때까지 반보갷서
+    while tmp:                                          # tmp가 빌때까지 반복해서
         cost, node = heapq.heappop(tmp)                 # tmp에서 비용과 연결 헛간 정보를 heappop한다
         if cost > distance[node]:                       # cost가 현재 저장된 헛간 이동비용보다 크다면
             continue                                    # continue
