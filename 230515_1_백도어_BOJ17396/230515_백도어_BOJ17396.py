@@ -26,7 +26,7 @@ def dijkstra(start):
     while tmp:                                      # tmp가 빌때까지 반복해서
         cost, node = heapq.heappop(tmp)             # cost와 node를 heappop해서
         if cost > distance[node]:                   # cost가 현재 저장된 이동시간보다 크다면
-            continue                                # continur
+            continue                                # continue
         for r in road[node]:                        # node 분기점과 연결된 경로를 반복해서
             cost2 = cost + r[0]                     # cost2에 현재 비용과 경로를 이동하는데 드는 시간을 더해 저장한다
             if cost2 < distance[r[1]]:              # cost2가 현재 저장된 시간보다 적게 걸리는 경우에는
