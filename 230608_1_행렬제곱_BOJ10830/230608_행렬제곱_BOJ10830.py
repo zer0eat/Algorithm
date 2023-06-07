@@ -25,6 +25,7 @@ for b in B:                                                 # 지수를 이진�
                     tmp[i][j] = tmpNum % 1000               # tmp의 i행 j열의 값에 tmpNum을 1000으로 나눈 나머지를 저장한다
         else:                                               # 모든 행렬의 곱을 마쳤다면
             ans = tmp[:]                                    # ans에 tmp를 저장한다
+
     tmp = [[0] * N for _ in range(N)]                       # 빈 행렬을 생성하고
     for i in range(N):                                      # 행의 크기를 반복하고
         for j in range(N):                                  # 열의 크기를 반복해서
