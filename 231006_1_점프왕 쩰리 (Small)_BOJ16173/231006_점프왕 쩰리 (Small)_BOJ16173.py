@@ -8,7 +8,7 @@ from collections import deque
 
 # input 받기
 N = int(input())                            # 게임 구역의 크기를 input 받고
-jelly = [list(map(int, input().split())) for _ in range(N)] # 게임판의 맵을 행렬 input 받는다
+jelly = [list(map(int, input().split())) for _ in range(N)]     # 게임판의 맵을 행렬 input 받는다
 visited = [[0]*N for _ in range(N)]         # 방문기록을 저장할 행렬을 생성한다
 d = [[0, 1], [1, 0]]                        # 2방향으로 이동할 리스트를 생성하고
 lst = deque([[0, 0]])                       # 시작점을 넣은 deque를 생성하고
