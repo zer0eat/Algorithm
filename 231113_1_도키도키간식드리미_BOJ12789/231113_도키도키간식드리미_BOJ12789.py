@@ -1,4 +1,5 @@
 # 도키도키간식드리미_BOJ12789
+
 # input 열기
 import sys
 sys.stdin = open('input.txt')
