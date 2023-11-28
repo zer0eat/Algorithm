@@ -2,6 +2,7 @@
 
 # input.txt 열기
 import sys
+sys.stdin = open('input.txt')
 input = sys.stdin.readline
 
 # input 받기
