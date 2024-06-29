@@ -1,0 +1,21 @@
+# 와글와글 숭고한_BOJ17388
+
+# input.txt 열기
+import sys
+input = sys.stdin.readline
+
+# input 받기
+s, k, h = map(int, input().split())
+if s + h + k >= 100:
+    print('OK')
+else:
+    if s<h:
+        if s<k:
+            print('Soongsil')
+        else:
+            print('Korea')
+    else:
+        if h<k:
+            print('Hanyang')
+        else:
+            print('Korea')
