@@ -9,4 +9,4 @@ input = sys.stdin.readline
 T = int(input())                        # 테스트 케이스를 input 받고
 for t in range(T):                      # 테스트 케이스를 반복해서
     a, b, c = map(int, input().split()) # 세 숫자를 input 받고
-    print(min(a,b,c))                   # a, b, c 중 가장 작은값을 출력한다
+    print(min(a,b,c))                   # a, b, c 중 가장 작은 값을 출력한다
