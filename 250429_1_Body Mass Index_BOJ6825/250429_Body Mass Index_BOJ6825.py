@@ -6,7 +6,7 @@ sys.stdin = open('input.txt')
 input = sys.stdin.readline
 
 # input 받기
-w = int(input())            # 몸무게를 input받고
+w = float(input())          # 몸무게를 input받고
 h = float(input())          # 키를 input받고
 bmi = w/(h*h)               # bmi를 구한 후
 if bmi >= 25:               # 25 이상이면
