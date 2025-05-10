@@ -1,5 +1,42 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,python,jupyternotebooks
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,python,jupyternotebooks
+# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,python,jupyternotebooks,macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,python,jupyternotebooks,macos
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### macOS Patch ###
+# iCloud generated files
+*.icloud
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
@@ -225,4 +262,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,python,jupyternotebooks
+# End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,python,jupyternotebooks,macos
